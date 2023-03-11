@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Desconto</title>
+</head>
+<body>
+    <div id="verdesconto"></div>
+    <script>
+        let cliente = Number (prompt("Essa é sua primeira compra? \n 1 - Sim \n 2-Não"));
+        let desconto;
+        if(cliente === 1){
+            desconto = "Seja muito bem vindo, você tem direito a 10% de desconto";
+        } else {
+            desconto = "Seja bem vindo de volta, você tem direito a 5% de desconto";
+        }
+        document.getElementById("verdesconto").innerHTML = desconto;
+    </script>    
+</body>
+</html>
